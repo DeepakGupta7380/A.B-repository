@@ -14,14 +14,14 @@ body{
     z-index: 1;
 }
 
-.parent{
+/* .parent{
     position: relative;
     width:300px;
     height:200px;
     background-color: yellow;
     margin-top: 40px;
     z-index: 2;
-}
+} */
 
 .absolute-box{
     position:absolute;

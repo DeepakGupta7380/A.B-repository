@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css homework</title>
+    <style>
+        body{
+            margin:0;
+            padding-top: 70px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        header{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100px;
+            height:60px;
+            background-color: #333;
+            color:aqua;
+            display:flex;
+            align-items: center;
+            padding-left: 20px;
+            z-index: 100;
+        }
+
+        .container{
+            position:relative;
+            width:300px;
+            height:200px;
+            margin:40px;
+            background-color: blueviolet;
+        }
+        .container button{
+            position:absolute;
+            bottom: 10px;
+            right:10px;
+            padding:8px 12px;
+        }
+
+        .box{
+            width: 200px;
+            height:80px;
+            margin:20px;
+            background-color: cadetblue;
+            color: orangered;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hide-display{
+            display: none;
+        }
+
+        .hide-visibility{
+            visibility:hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Fixed Header(Always on Top)
+    </header>
+
+    <div class="container">
+        Relative container
+        <button>Absolute Button</button>
+    </div>
+
+    <div class="box hide-display">
+        Display None Box
+    </div>
+
+    <div class="box hide-visibility">
+        Visibility hidden Box
+    </div>
+
+    <div class="box">
+        Visible Box
+    </div>
+</body>
+</html>
