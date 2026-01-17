@@ -1,0 +1,46 @@
+body{
+    height: 2000px;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.relative-box{
+    position:relative;
+    top:20px;
+    left:20px;
+    width:150px;
+    height:150px;
+    background-color: lightblue;
+    z-index: 1;
+}
+
+.parent{
+    position: relative;
+    width:300px;
+    height:200px;
+    background-color: yellow;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+.absolute-box{
+    position:absolute;
+    top:20px;
+    right: 20px;
+    width:100px;
+    height:100px;
+    background-color: orange;
+    z-index: 3;
+}
+
+.fixed-box{
+    position: fixed;
+    top:0;
+    left:0;
+    width:120px;
+    height:120px;
+    background-color: red;
+    color:aquamarine;
+    z-index: 10;
+    
+}
