@@ -1,0 +1,25 @@
+body{
+    background-color: #f2f2;
+    font-size: large;
+}
+.box{
+    width: 400px;
+    background-color: aquamarine;
+    border: 3px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+}
+.btn{
+    background-color: #007bff;
+    color:#f2f2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #0056b3;
+}
+
