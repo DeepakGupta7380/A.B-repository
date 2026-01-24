@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Card using Flexbox</title>
+    <style>
+        body{
+            margin: 200px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .card-container{
+            display:flex;
+            gap: 20px;
+        }
+        .card{
+            width: 250px;
+            padding: 20px;
+            background-color: #5f5;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(120, 45, 98, 0.5);
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>This is the first card.</p>
+        </div>
+
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>This is the second card.</p>
+        </div>
+
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>This is the third card.</p>
+        </div>
+
+    </div>
+</body>
+</html>
