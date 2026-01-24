@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Column Flexbox Layout</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #f4f4;
+        }
+
+        .container{
+            display:flex;
+            gap: 20px;
+            padding: 20px;
+            height: 100vh;
+            align-items: center;
+            
+        }
+
+        .column{
+            background-color: #23ff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(10, 145, 40, 0.2);
+            text-align: center;
+        }
+
+        .col-1{
+            flex-grow: 1;
+        }
+
+        .col-2{
+            flex-grow: 2;
+        }
+        .col-3{
+            flex-grow: 1;
+        }
+        .col-3{
+            align-self: flex-start;
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column col-1">
+            <h2>Column 1</h2>
+            <p>flex-grow: 1</p>
+        </div>
+
+        <div class="column col-2">
+            <h2>Column 2</h2>
+            <p>flex-grow: 2 (bigger column)</p>
+        </div>
+
+        <div class="column col-3">
+            <h2>Column 3</h2>
+            <p>align-self: flex-start</p>
+        </div>
+    </div>
+</body>
+</html>
